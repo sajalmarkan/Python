@@ -1,7 +1,12 @@
-st= input("Enter message")
+coding = int(input("Enter 1 for coding and 0 for decding: "))
+st= input("Enter message: ")
 words = st.split(" ")
-
-coding=true
+if(coding==1):
+    coding = True
+elif (coding==0):
+    coding= False
+else:
+    print("Envalid input")
 if(coding):
     nwords =[]
     for word in words:
