@@ -3,7 +3,7 @@ st= input("Enter message: ")
 words = st.split(" ")
 if(coding==1):
     coding = True
-elif (coding==0):
+elif (coding==0): 
     coding= False
 else:
     print("Envalid input")
