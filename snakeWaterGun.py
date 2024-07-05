@@ -12,20 +12,25 @@ def check(comp,user):
     
     return 1
 comp =random.randint(0,2)
-user = int(input("Enter 0 for snake, 1 for water and 2 for Gun:\n"))
-if user <0 or user>2:
-    print("Enter Valid Input")
 
-else: 
-    score = check(comp,user)
+try:
+    user = int(input("Enter 0 for snake, 1 for water and 2 for Gun:\n"))
+    if user <0 or user>2:
+        print("Enter Valid Input")
 
-    print("You:",user)
-    print("Computer:",comp)
+    else: 
+        score = check(comp,user)
 
-    if(score ==0):
-        print("Its a draw")
+        print("You:",user)
+        print("Computer:",comp)
 
-    elif(score ==-1):
-        print("You loose")
-    else:
-        print("You Won")
+        if(score ==0):
+            print("Its a draw")
+
+        elif(score ==-1):
+            print("You loose")
+        else:
+            print("You Won")
+
+except ValueError:
+    print ("Enter a valid under between 0 and 2")
