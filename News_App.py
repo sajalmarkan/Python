@@ -1,6 +1,7 @@
 import requests
 query = input("What type of news are you interested in?")
 url = f"https://newsapi.org/v2/everything?q={query}&from=2024-06-09&sortBy=publishedAt&apiKey=28cac576bb6c411a9c12103a141e34c2"
+url = f"https://newsapi.org/v2/everything?q={query}&from=2024-06-09&sortBy=publishedAt&apiKey="  #Enter your API key
 r= requests.get(url)
 print(r.text)
 
