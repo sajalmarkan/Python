@@ -8,7 +8,7 @@ l=[1,2,3,4,5]
 #     newl.append(cube(i))
 newlist=list(map(cube,l))
 print(newlist)
-
+ 
 # Filter
 def filter_function(a):
    return a>4
